@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script>
-      document.documentElement.className += ' js'
+      document.documentElement.className += ' js';
     </script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -29,7 +29,9 @@
   <body>
     <div class="grid-container">
       <nav class="menu" data-menu="suave">
-        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
         <ul data-menu="list" id="menu">
           <li><a href="#animais">Animais</a></li>
           <li data-dropdown>
@@ -213,15 +215,39 @@
         </dl>
       </section>
 
+      <section class="grid-section galeria" data-anime="scroll">
+        <ul class="custom-controls">
+          <li><img src="img/slide/foto1-thumb.jpg" /></li>
+          <li><img src="img/slide/foto2-thumb.jpg" /></li>
+          <li><img src="img/slide/foto3-thumb.jpg" /></li>
+          <li><img src="img/slide/foto4-thumb.jpg" /></li>
+          <li><img src="img/slide/foto5-thumb.jpg" /></li>
+          <li><img src="img/slide/foto6-thumb.jpg" /></li>
+        </ul>
+        <div class="slide-wrapper">
+          <ul class="slide">
+            <li><img src="img/slide/foto1.jpg" alt="" /></li>
+            <li><img src="img/slide/foto2.jpg" alt="" /></li>
+            <li><img src="img/slide/foto3.jpg" alt="" /></li>
+            <li><img src="img/slide/foto4.jpg" alt="" /></li>
+            <li><img src="img/slide/foto5.jpg" alt="" /></li>
+            <li><img src="img/slide/foto6.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+
       <section class="grid-section numeros" data-anime="scroll">
         <h1 class="titulo">Números</h1>
-        <div class="numeros-grid">
-        </div>
+        <div class="numeros-grid"></div>
       </section>
 
       <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
-        <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento."
+        >
           <img src="img/mapa.png" />
         </div>
 
@@ -230,7 +256,9 @@
           <li>+55 (38) 99186-0318</li>
           <li>Montes Claros - MG</li>
           <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
-          <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg à Sex das 8 às 18
+          </li>
         </ul>
       </section>
 
